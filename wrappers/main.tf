@@ -18,7 +18,7 @@ module "wrapper" {
   allowed_kms_key_arn                        = try(each.value.allowed_kms_key_arn, var.defaults.allowed_kms_key_arn, null)
   attach_deny_unencrypted_object_uploads     = try(each.value.attach_deny_unencrypted_object_uploads, var.defaults.attach_deny_unencrypted_object_uploads, false)
   bucket                                     = try(each.value.bucket, var.defaults.bucket, null)
-  region                                     = try(each.value.region, var.defaults.region, null)
+  my-random-bucket-2                         = try(each.value.region, var.defaults.region, null)
   bucket_prefix                              = try(each.value.bucket_prefix, var.defaults.bucket_prefix, null)
   acl                                        = try(each.value.acl, var.defaults.acl, null)
   policy                                     = try(each.value.policy, var.defaults.policy, null)
